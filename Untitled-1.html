@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Kitty Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Baloo 2', cursive;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #ffddee, #ffe6f2);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: #fff0f5;
+      border: 3px dashed #ff69b4;
+      padding: 30px;
+      border-radius: 25px;
+      width: 320px;
+      box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+      text-align: center;
+      position: relative;
+    }
+
+    .login-box img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .login-box h2 {
+      color: #ff1493;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #ffc0cb;
+      border-radius: 10px;
+      background-color: #fff8fb;
+      font-size: 16px;
+    }
+
+    .login-box input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff69b4;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box input[type="submit"]:hover {
+      background-color: #ff1493;
+    }
+
+    .login-box p {
+      margin-top: 12px;
+      color: #cc6699;
+    }
+
+    .login-box a {
+      color: #ff69b4;
+      text-decoration: none;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <img src="hk1.png" alt="Hello Kitty">
+    <h2>Welcome Kitty!</h2>
+    <form action="#">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <input type="submit" value="Log In" />
+    </form>
+    <p>Not a member? <a href="#">Sign up meow!</a></p>
+  </div>
+</body>
+</html>

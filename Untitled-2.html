@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>McDo Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Fredoka One', cursive;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #ffcc00, #ff0000);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 25px;
+      width: 320px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+    }
+
+    .login-container img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .login-container h2 {
+      color: #d70000;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #ffd700;
+      border-radius: 10px;
+      background-color: #fff8e1;
+      font-size: 16px;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #d70000;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background-color: #a80000;
+    }
+
+    .login-container p {
+      margin-top: 15px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .login-container a {
+      color: #d70000;
+      text-decoration: none;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="hk2.png" alt="McDo Logo">
+    <h2>Welcome to McLogin</h2>
+    <form action="#">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <input type="submit" value="Log In" />
+    </form>
+    <p>Don't have a McAccount? <a href="#">Register now</a></p>
+  </div>
+</body>
+</html>
